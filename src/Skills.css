@@ -1,0 +1,39 @@
+.skills-container {
+  font-weight: bold; /* Bold text for container */
+  text-align: center; /* Center alignment for container */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem; /* Spacing between cards */
+  animation: appear 0.5s ease-in-out forwards; /* Adjust animation duration */
+  background-color: silver; /* Dark background for container */
+}
+
+.skills-container paper.skill-card {
+  margin: auto; /* Center cards horizontally */
+  padding: 1rem; /* Padding for content spacing */
+  border-radius: 5px; /* Rounded corners for softer look */
+  background-color: #222; /* Dark solid color for cards */
+  color: #ddd; /* Light gray for text (improves contrast) */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3); /* Subtler shadow */
+  transition: all 0.2s ease-in-out; /* Smooth transition on hover */
+  cursor: pointer; /* Indicate hoverable element */
+}
+
+.skills-container paper.skill-card:hover {
+  background-color: #333; /* Slightly darker background on hover */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+  border: 1px solid #fff; /* White border on hover for highlighting (adjusted width) */
+}
+
+h2 {
+  text-align: center;
+  color: #fff; /* Light font color for heading */
+  font-size: 2rem; /* Adjust font size for heading */
+  font-weight: bold;
+  margin-bottom: 1rem; /* Add margin for spacing */
+}
+
+@keyframes appear {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

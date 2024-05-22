@@ -1,0 +1,32 @@
+.projects {
+  /* Styles for the main projects container */
+  width: 100%;
+  text-align: center; /* Center align content (optional) */
+}
+
+.projects h2 {
+  font-size: 5em; /* Adjust heading size as needed */
+  color: #f0545e; /* Set heading color */
+  margin-bottom: 2em; /* Add some margin below the heading */
+}
+
+.card {
+  /* Styles for the individual project cards */
+  max-width: 25em;
+  margin: 0 auto 1em; /* Center cards horizontally, add margin */
+  padding: 1em;
+  border-radius: 5px; /* Add rounded corners */
+  box-shadow: 0 2px 4px #0000001a; /* Optional subtle shadow */
+  background-color: silver; /* Light gray background (replace with your choice) */
+  color: #3498db; /* Dark gray text */
+}
+
+.card h5 {
+  font-weight: bold; /* Make card title bold */
+}
+
+.card img {
+  /* Styles for the card image */
+  width: 100%; /* Make image fill card width */
+  height: 140px; /* Adjust image height as needed */
+}

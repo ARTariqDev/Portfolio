@@ -1,0 +1,33 @@
+aside {
+    background-color: #211A1D;
+    display: flex;
+    flex-direction: column;
+    width: 25em;
+    height: 100%; /* Set height to viewport height */
+    width: 20em;
+}
+
+img {
+    border-radius: 5em;
+    -webkit-border-radius: 5em;
+    -moz-border-radius: 5em;
+    -ms-border-radius: 5em;
+    -o-border-radius: 5em;
+    width: 80%;
+    padding: 1em;
+}
+
+h2 {
+    color: #F8F0FB;
+}
+
+aside h2,h3,li {
+    padding: 0.5em;
+    color: white;
+}
+
+p {
+    font-family: "Averia Serif Libre", serif;
+    font-weight: bold;
+    
+}

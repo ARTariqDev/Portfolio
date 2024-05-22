@@ -1,0 +1,114 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers elements horizontally */
+    justify-content: center; /* Centers elements vertically */
+    padding: 2rem;
+    border-radius: 5px;
+    background-color: #e0e0e0; /* Light grayish-blue background */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 2rem auto; /* Center form horizontally and add margin */
+    animation: slide-up 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  h2 {
+    text-align: center;
+    color: #f0545e; /* Light pink heading */
+    font-size: 1.5rem; /* Adjust heading size */
+    font-weight: bold;
+    margin-bottom: 1rem; /* Add margin for spacing */
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #3498db; /* Light blue for labels */
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #b2dfee; /* Light blue border */
+    border-radius: 3px; /* Rounded corners */
+    font-size: 1rem; /* Adjust input size */
+    transition: all 0.2s ease-in-out; /* Smooth transition on focus */
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #3498db; /* Light blue border on focus */
+    outline: none; /* Remove default focus outline */
+  }
+  
+  textarea {
+    height: 100px; /* Adjust textarea height */
+    resize: vertical; /* Allow vertical resizing */
+  }
+  
+  button[type="submit"] {
+    background-color: #f0545e; /* Light pink background */
+    color: #fff; /* White text color */
+    padding: 1rem 2rem; /* Increase padding for a wider button */
+    border: none;
+    border-radius: 50px; /* Rounded corners (circular) */
+    font-size: 1rem; /* Adjust button font size */
+    cursor: pointer; /* Indicate clickable element */
+    transition: all 0.2s ease-in-out;
+    margin-top: 1rem; /* Add margin for spacing */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #c6393d; /* Darker pink on hover */
+  }
+
+  /* Error message styles */
+
+.invalid {
+  border-color: #c0392b;
+}
+
+.error-message {
+  color: #c0392b;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 1rem; /* Increase padding for bigger fields */
+  border: 2px solid #b2dfee; /* Increase border width for better visibility */
+  border-radius: 5px; /* Add slight border radius */
+  font-size: 1.1rem; /* Increase font size for better readability */
+  transition: all 0.2s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  border-color: #3498db; /* Light blue border on focus */
+  outline: none;
+}
+
+.invalid {
+  border-color: #c0392b !important; /* Red border on error */
+}
+
+.error-message {
+  color: #c0392b;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
